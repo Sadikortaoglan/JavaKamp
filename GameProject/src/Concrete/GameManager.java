@@ -1,8 +1,6 @@
 package Concrete;
 import Abstract.GameService;
-import Abstract.GamerService;
 import Entities.Game;
-import Entities.Gamer;
 
 public class GameManager implements GameService {
 

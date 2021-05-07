@@ -4,19 +4,21 @@ import Abstract.Entity;
 public class Gamer implements Entity {
 	
 	private int id ;
-	private String tc;
+	private Long tc;
 	private String firstName;
 	private String lastName;
+	private int dateOfBirthDate;
 	
 	public Gamer() {
 		
 	}
-	public Gamer(int id, String tc, String firstName, String lastName) {
+	public Gamer(int id, Long tc, String firstName, String lastName,int dateOfBirthDate) {
 		super();
 		this.id = id;
 		this.tc = tc;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.dateOfBirthDate=dateOfBirthDate;
 	}
 	public int getId() {
 		return id;
@@ -24,10 +26,10 @@ public class Gamer implements Entity {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getTc() {
+	public Long getTc() {
 		return tc;
 	}
-	public void setTc(String tc) {
+	public void setTc(Long tc) {
 		this.tc = tc;
 	}
 	public String getFirstName() {
@@ -41,6 +43,12 @@ public class Gamer implements Entity {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	public int getDateOfBirthDate() {
+		return dateOfBirthDate;
+	}
+	public void setDateOfBirthDate(int dateOfBirthDate) {
+		this.dateOfBirthDate = dateOfBirthDate;
 	}
 
 }
